@@ -6,6 +6,6 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface SubscriptionService {
-    @POST
+    @POST("/fakeAuth")
     fun addNewSubscription(@Body newSubscription: SubscriptionRequestApiModel): Call<String>
 }
